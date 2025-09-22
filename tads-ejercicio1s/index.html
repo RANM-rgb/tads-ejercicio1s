@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Examen 1er seguimiento de Graficación</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen 1er seguimiento</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container text-center my-5">
-        <h1>Examen 1er seguimiento de Taller Avanzado de Desarrollo de Software</h1>
-        <div id="image-container" class="my-4">
-            <img id="image" src="imagenes/imagen.jpg" alt="Imagen de ejemplo" class="img-fluid">
-        </div>
+  <div class="container">
+    <!-- Encabezado -->
+    <h1>Examen 1er seguimiento de</h1>
+    <h2>Taller Avanzado de Desarrollo de Software</h2>
 
-        <div class="btn-group my-4" role="group">
-            <button id="smallBtn" class="btn btn-primary">Pequeño</button>
-            <button id="mediumBtn" class="btn btn-secondary">Mediano</button>
-            <button id="largeBtn" class="btn btn-success">Grande</button>
-        </div>
-        <h2>Integrantes del equipo:</h2>
-        <h4>00200000 - Estudiante 1</h4>
-        <h4>00200000 - Estudiante 2</h4>
+    <!-- Imagen SVG -->
+    <div class="imagen-box">
+      <img id="imagen" src="icon-github.svg" alt="Logo SVG" class="mediano">
     </div>
 
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Botones -->
+    <div class="botones">
+      <button class="btn x-small" onclick="cambiarTamaño('x-pequeño')">X-Pequeño!</button>
+      <button class="btn small" onclick="cambiarTamaño('pequeño')">Pequeño</button>
+      <button class="btn medium" onclick="cambiarTamaño('mediano')">Mediano</button>
+      <button class="btn large" onclick="cambiarTamaño('grande')">Grande</button>
+      <button class="btn x-large" onclick="cambiarTamaño('x-grande')">X-Grande!</button>
+    </div>
+
+    <!-- Integrantes -->
+    <div class="equipo">
+      <p><b>Integrantes del equipo:</b></p>
+      <p>22200210 - <b>Rodrigo Axel Noeggerath Medina</b></p>
+      <p>22200205 - <b>Luis Enrique Cabrera García</b></p>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
 </body>
 </html>

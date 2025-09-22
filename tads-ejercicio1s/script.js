@@ -1,21 +1,9 @@
-// Obtener la imagen y los botones
-const image = document.getElementById('image');
-const smallBtn = document.getElementById('smallBtn');
-const mediumBtn = document.getElementById('mediumBtn');
-const largeBtn = document.getElementById('largeBtn');
+function cambiarTamaño(tamaño) {
+  const imagen = document.getElementById("imagen");
 
-// Funciones para cambiar el tamaño de la imagen
-smallBtn.addEventListener('click', () => {
-    image.style.width = '150px';
-    image.style.height = '150px';
-});
+  // quitar todas las clases previas
+  imagen.classList.remove("x-pequeño", "pequeño", "mediano", "grande", "x-grande");
 
-mediumBtn.addEventListener('click', () => {
-    image.style.width = '300px';
-    image.style.height = '300px';
-});
-
-largeBtn.addEventListener('click', () => {
-    image.style.width = '450px';
-    image.style.height = '450px';
-});
+  // agregar la clase nueva
+  imagen.classList.add(tamaño);
+}
